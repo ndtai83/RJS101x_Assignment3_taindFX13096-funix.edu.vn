@@ -159,11 +159,29 @@
   margin-left: 70px;
   margin-top: 10px;
 }
+.errorInputName {
+  color:red;
+  /* color: yellow; */
+  display: flex;
+  justify-content: center;
+  /* margin-top: 50px; */
+  margin-top: 70px;
+  margin-left: 190px;
+}
 .errorInputDate {
   color:red;
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+.errorInputStart {
+  color:red;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 50px; */
+  margin-top: 70px;
+  /* margin-left: 190px; */
+  margin-left: 220px;
 }
 .itemUserSearch {
   /* position: relative; */

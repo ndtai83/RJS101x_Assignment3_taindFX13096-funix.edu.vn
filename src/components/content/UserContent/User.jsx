@@ -86,7 +86,21 @@ function User({ STAFFS }) {
                     disabled={valueName.length === 30}
                     onChange={(e) => setValueName(e.target.value)}
                   />
+                  {valueName.length == 0 ? (
+                    <span className={styles.errorInputName}>
+                      Không được bỏ trống
+                    </span>
+                  ) : (
+                    ""
+                  )}
                 </div>
+                {/* {valueStart.length == 0 ? (
+                    <span className={styles.errorInputName}>
+                      Không được bỏ trống
+                    </span>
+                  ) : (
+                    ""
+                  )} */}
                 {valueName.length === 30 ? (
                   <span className={styles.errorInput}>
                     Không nhập quá 30 ký tự
@@ -105,6 +119,13 @@ function User({ STAFFS }) {
                     value={valueDate}
                     onChange={(e) => setValueDate(e.target.value)}
                   />
+                  {/* {valueDate.length == 0 ? (
+                    <span className={styles.errorInputDate}>
+                      Không được bỏ trống
+                    </span>
+                  ) : (
+                    ""
+                  )} */}
                   {valueDate.length == 0 ? (
                     <span className={styles.errorInputDate}>
                       Không được bỏ trống
@@ -122,6 +143,13 @@ function User({ STAFFS }) {
                     value={valueStart}
                     onChange={(e) => setValueStart(e.target.value)}
                   />
+                  {valueStart.length == 0 ? (
+                    <span className={styles.errorInputStart}>
+                      Không được bỏ trống
+                    </span>
+                  ) : (
+                    ""
+                  )}
                   <span></span>
                 </div>
 
